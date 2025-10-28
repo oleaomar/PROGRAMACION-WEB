@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Omar Martinez Olea">
+    <title>Listas y Formularios</title>
+</head>
+<body>
+    <h1>Listas y Formularios</h1>
+    <h2>Listas</h2>
+    
+    <!--Listas Desordenadas-->
+    <!--Tienen un punto para referirse que es una lista-->
+    <ul>
+        <li>Leche</li>
+        <li>Huevos</li>
+        <li>Carne</li>
+        <li>Pollo</li>
+        <li>Jamon</li>
+    </ul>
+    <!--Listas Ordenadas-->
+    <!--Estan enumeradas-->
+    <ol type="1" start="2">
+        
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>Cuarto</li>
+        <li>Quinto</li>
+    </ol>
+    <!--Listas de Definiciones-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lenguaje de marcado de Hipertexto</dd>
+        <dt>CSS</dt>
+        <dd> Hoja de estilos de Cascada</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+        
+    </dl>
+ <hr>
+    <!--Listas Anidadas-->
+ <p>Desarrollo Web</p>
+ <ul>
+    <li>Frontend
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+
+        </ol>
+    </li>
+    <li>Backend
+        <ol>
+            <li>NodeJS</li>
+            <li>MySQL</li>
+            <li>Debian</li>
+        </ol>
+    </li>
+ </ul>
+ <hr>
+ <br>
+ <!--FORMULARIOS-->
+ <p>Formulario de Inicio de Sesion</p>
+ <form action="/inicio_sesion" method="post">
+    <!--action redirige a una ruta para procesar lo que el usuario vaya a poner-->
+    <!-- method es como se va a mandar la info del cliente al servidor, con post es muy seguro-->
+
+    <label for="username"> Usuario:</label>
+    <!--label se relaciona con for y for se relaciona con id, por lo tanto deben de ser iguales-->
+    <input type="text" id="username" name="username" placeholder="Introduce Nombre de Usuario" required>
+
+
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" placeholder="Introduce tu Contraseña" required>
+    <!--placeholder es para una pista dentro de nuestro input para el usuario-->
+
+
+    <button type="submit">Enviar </button>
+    <!--type submit va a enviar nuestras entradas por medio del boton-->
+
+
+ </form>
+ <hr>
+ <br>
+ <br>
+ <p>Formulario con campo de entrada de varias lineas</p>
+ <form action="/validacion.php" method="post">
+    <label for="name">Nombre:</label>
+    <input type="text" name="name" id="name" required placeholder="Introduce tu nombre pls">
+    <br>
+    <br>
+    <label for="opinion">Comentarios: </label>
+    <textarea name="opinion" id="opinion" rows="4" cols="40" placeholder=" TU OPINION NOS IMPORTA"></textarea>
+    <!--textarea admite muchisimas lineas. Bastante longitud, todo depende del row y del cols. Rows= filas Cols=columnas-->
+    <br>
+    <button type="submit">Enviar</button>
+
+
+
+
+
+ </form>
+ <br>
+ <hr>
+ <p>Formularios con listas desplegables de opciones</p>
+ <form action="/seleccion_bebidasypostres" method="post">
+  <label for="bebidas">Bebidas:</label>
+  <select name="bebidas" id="bebidas">
+    <option value=" limonada">Limonada</option>
+    <option value=" naranjada">Naranjada</option>
+    <option value=" refresco">Refresco</option>
+    <option value=" michelada">Michelada</option>
+    <option value=" agua">Agua</option>
+    <!--todos los atributos de value van en minuscula (la primera letra)-->
+  </select>
+  <br>
+  <br>
+
+  <label for="postres">Postres:</label>
+  <select name="postres" id="postres">
+     <option value=" pie_limon">Pie de Limon</option>
+     <option value=" pie_fresa">Pie de Fresa</option>
+     <option value=" pastel">Pastel</option>
+     
+  </select>
+  <button type="submit"> Enviar</button>
+
+
+ </form>
+  <br>
+  <br>
+  <hr>
+  <p>Formularios Complejos con Distintos campos de Datos</p>
+   <form action="/datos_usuario" method="post">
+     <fieldset>
+        <legend>Nombre</legend>
+        <label for="nombre"> Nombre(s)</label>
+        <input type="text" id="nombre" name="name" required>
+        <br>
+        <label for="apellidoP">Apellido Paterno</label>
+        <input type="text" id="apellidoP" name="apellidoP" required>
+        <br>
+        <label for="apellidoM">Apellido Materno</label>
+        <input type="text" name="apellidoM" id="apellidoM" required>
+      </fieldset> 
+     <fieldset>
+       <legend>Otros Datos</legend>
+       <label for="fecha_nacimiento"> Fecha de Nacimiento</label>
+       <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+       <br>
+       <label for="edad"> Edad</label>
+       <input type="number" id="edad" name="edad" required>
+        <br>
+       <label for="numeroC">Numero de Cuenta </label>
+       <input type="text" id="numeroC" name="numeroC" minlength="9" maxlength="9" required placeholder="Ingresa tu numero de Cuenta">
+       <br>
+       <label for="email">Correo Electronico</label>
+       <input type="email" name="email" id="email" required>
+       <button type="submit"> Enviar</button>
+    </fieldset> 
+    <fieldset>
+       <legend>Direccion</legend>
+       <label for="calle"> Calle</label>
+       <input type="text" id="calle" name="calle" value="Emiliano Zapata" required>
+        <br>
+       <label for="nuCasa">Numero de Casa </label>
+       <input type="number" id="nuCasa" name="nuCasa" required placeholder="Ingresa el numero de tu casa">
+       <br>
+       <label for="colonia">Colonia</label>
+       <input type="text" name="colonia" id="colonia" required>
+       <button type="submit"> Enviar</button>
+    </fieldset> 
+  </form>
+</body>
+</html>

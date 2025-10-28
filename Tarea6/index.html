@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"  content="Omar Martinez Olea">
+    <title>Contenedores Semanticos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <!--enlaces principales de la pagina-->
+            <li><a href="../Tarea4/index.html" target="_blank">Tarea4</a></li>
+            <li><a href="../Tarea3.Contenedores/index.html" target="_blank">Tarea3</a></li>
+            <li><a href="../Tarea2/index.html" target="_blank">Tarea2</a></li>
+            <li><a href="../Tarea1/index.html" target="_blank">Tarea1</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Lenguaje de Marcado de Hipertexto</h1>
+        <p>
+            Bienvenidos! Hoy  estaremos practicando algunos conceptos y elementos más importantes
+        vistos hasta el momento  en la materia de pw1, además veremos el uso de <strong>etiquetassemánticas</strong>
+        en la estruturación de un sitio web.
+        </p>
+    </section>
+    <!--Esta etiqueta ya tiene un peso semantico-->
+    <main>
+        <section>
+        <h2>Conceptos principales de HTML</h2>
+        <!--Usamos article para descripcion de productos o informacion-->
+        <article>
+            <h3>HTML</h3>
+            <p>Lenguaje de marcado de Hipertexto, que se utiliza
+                para hacer o estructurar una página web.
+            </p>
+        </article>
+        <article>
+            <h3>Elemetno HTML</h3>
+            <p>
+                Es la unidad básica de estructura y contenido de una página web, esta compuesta de:
+            </p>
+            <ol type="I">
+                <li>Etiqueta de apertura</li>
+                <li>Pares atributo-valor</li>
+                <li>Conteido</li>
+                <li>Etiqueta de cierre</li>
+            </ol>
+        </article>
+        <article>
+            <h3>Etiqueta <code>&lt;head&gt;</code></h3>
+        <p>
+            Es una etiqueta que contiene metadatos, esla forma en la que una página web se comunica
+            con el navegador, funcione para el SEO, se puede enlazar achivos CSS o
+             Scripts.
+        </p>
+        </article>
+        <article>
+            <h3>Etiqueta <code>&lt;body&gt;</code></h3>
+            <p>
+                Contiene todo el contenido HTML.
+            </p>
+        </article>
+        <article>
+            <h3>Contenedores Semanticos</h3>
+            <table border="1px">
+                <tr>
+                    <th>&lt;Header&gt;</th>
+                    <td>Etiqueta utilizada para el contenido introductorio de una página web, puede contener el logo, 
+                        el menú de navegación principal, el nombre de la empresa, etc...</td>                    
+                </tr>
+                <tr>
+                    <th>&lt;nav&gt;</th>
+                    <td>Etiqueta utilizada para el menu de navegacion principal, suele contener enlaces a otras paginas relacionadas o navegar por la pagina principal, no debe de haber mas en la pagina.</td>
+                </tr>
+                <tr>
+                    <th>&lt;main&gt;</th>
+                    <td>Etiqueta unica en una pagina web cuyo proposito es resaltar nuestro objetivo o mensaje principal del sitio web. Dentro se colocara el contenido principal de nuestra pagina</td>
+                </tr>
+                <tr>
+                    <th>&lt;section&gt;</th>
+                    <td>Es una etiqueta que poco a poco se intenta que sustituya a &lt;div&gt; , su uso es para dividir la pagina en secciones y agrupar contenido relacionado </td>
+                </tr>
+                <tr>
+                    <th>&lt;article&gt;</th>
+                    <td>Es una etqueta que se utiliza para agrupar contenido autonomo, que si se separa de otro contenido sigue teniendo coherencia. Normalmente se compone de un encabezado y contenido </td>
+
+                </tr>
+                <tr>
+                    <th>&lt;footer&gt;</th>
+                    <td>Es una etiqueta que normalmente se encuentra al final de una pagina y funciona como cierrre de un sitio web. A menudo contiene datos de contacto, derechoos de autor u otra informacion complementaria. </td>
+                </tr>
+            </table>
+        </article>
+    </section>
+        <section>
+            <h2>Etiqueta principales HTML</h2>
+            <article>
+                <h3>Etiqueta &lt;a&gt;</h3>
+                    <p>Es unb elemento que nos va a permitir navegar a:</p>
+                    <ul>
+                        <li>Páginas externas</li>
+                        <li>Páginas internas</li>
+                        <li>Secciones dentro de la misma página (enlaces ancla)</li>
+                    </ul>
+                    <p>Algunos valores especifiocs para el atributo son:</p>
+                    <dl>
+                        <dt>href="https://wa.me/5583386104"</dt>
+                        <dd>Abre un chat del número especificado en WhastApp</dd>
+                        <dt>href="mailto.example@.com</dt>
+                        <dd>Abre una aplicación de correo, con el destinatario especificado</dd>
+                    </dl>
+            </article>
+            <article>
+                <h3>Etiqueta &lt;a&gt</h3>
+                    <p>Es el medio con el quelos usaurios pueden comunicarse con nuestra página web a traves
+                        de un elemento, podemos recopilar informacionpara posteriormente procesarla
+                    </p>
+            </article>
+            <p>Un ejemplo de formulario de inicio de sesion</p>
+            <form action="/inicio_sesion" method="post">
+                <label for="username">Nombre de usuario</label>
+                <input type="text" name="username" id="username" placeholder="Introduce tu username brr brr pata pin" required>
+                <br>
+                <label for="password">contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Introduce tu contraseña" required>
+                <br>
+                <button type="submit">Enviar</button>
+                
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contactanos :</p>
+        <ul>
+            <li><a href="https://facebook.com"> facebook</a> </li> 
+            <li><a href="https://wa.me/46465461">WhastApp</a></li>
+            <li><a href="mailto.example@.com">Mail</a></li>
+        </ul>
+        <p>CC BY-NC-ND</p>
+    </footer>
+    
+    
+</body>
+</html>

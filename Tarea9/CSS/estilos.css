@@ -1,0 +1,40 @@
+#encabezado{
+    color:white;
+    background-color: black;
+}
+.fondo--imagen{
+    /*Background-image: Permite agregar imagenes como fondo de un contenedor o elemento HTML,
+    tambien se puede agregar gradientes*/
+    color: aliceblue;
+    background-image: radial-gradient(ellipse, rgba(45, 39, 121, 0.342), rgba(63, 72, 94, 0.178)), url(../IMAGENES/homonimo.jpg);
+
+    /*background-size (Cover, contain y width(px)-height(px))
+    Especificar el tamaño de la imagen de fondo*/
+    background-size: contain;
+    /* Background repeat (repeat, repeat x, repeat y, y no repeat)
+    aplica cuando la imagen es mas pequeña que su contenedor */
+    background-repeat:  no-repeat;
+
+    /*Background position (top, bottom, left, right y center) 
+    Establece la posicion inicial de la imagen en su contenedor */
+    background-position: auto;
+
+    /*background-attachment (scroll y fixed)
+    Se utilizxa para que la imagen se quede fija en su contenedor
+    cuando un usuario  se desplaza por la página*/
+    background-attachment: fixed;
+
+    height: 1000px;
+    width: 1000px;
+    border: 2px solid rgb(98, 75, 127);
+}
+
+.fondo--imagen1{
+    /*background: (image) (position) / (size)  (repeat) (attachment) (color)*/
+    background:   url(../IMAGENES/dragpath.webp) center / contain no-repeat scroll blue;
+
+    color: rgb(81, 81, 81);
+    height: 1000px;
+    width: 1000px;
+    border: 2px solid rgb(50, 43, 91);
+}
