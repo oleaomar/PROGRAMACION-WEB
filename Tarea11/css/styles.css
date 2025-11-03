@@ -15,7 +15,7 @@ body{
 */
 
 a:link{
-    color: rgb(64, 200, 241);
+    color: rgb(29, 50, 102);
 }
 
 a:visited{
@@ -23,7 +23,7 @@ a:visited{
 }
 
 a:focus{
-    color: chartreuse;
+    color: rgb(241, 141, 17);
     background-color: black;
     border: 0.3rem  solid goldenrod;
 }
