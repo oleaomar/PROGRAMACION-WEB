@@ -1,0 +1,49 @@
+html{
+    font-size: 62.5%;
+    background-image: linear-gradient(to bottom, rgba(34, 181, 181, 0.81), rgb(128, 0, 109));
+    background-attachment:fixed;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Goldman", sans-serif;
+    color: rgba(23, 166, 39, 0.805);
+}
+
+.contenedor--tabla{
+    border: 0.5em outset silver;
+    padding: 0.2em;
+    /*le va a decir que va a pasar cuando se desborde del contenedor*/
+    overflow-x: scroll;
+}
+
+.tabla--alumnos{
+    width: 100%;
+    border-collapse: separate;
+    min-width: 40em; /*300px*/
+}
+
+.tabla--alumnos th, td{
+    border: 0.1em solid rgb(255, 255, 255) ;
+    border-radius: 12%;
+    text-align: center;
+    padding: 0.2em;
+}
+
+.tabla--alumnos th{
+    background-image: radial-gradient(rgb(216, 237, 245), #6b3bbd);
+    filter: brightness(0.75);
+    color: rgb(106, 68, 227);
+}
+
+/*para que cuando pasemos por los nombres se marque color*/
+.tabla--alumnos tr:hover{
+    background-color: rgba(147, 18, 159, 0.651);
+    filter: brightness(1.5);
+}
+
+/*para que las filas pares se resalten, como estilo cebra*/
+.tabla--alumnos tr:nth-child(even){
+    background-color: rgba(60, 34, 165, 0.456);
+}
