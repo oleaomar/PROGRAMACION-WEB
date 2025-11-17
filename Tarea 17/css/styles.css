@@ -1,0 +1,73 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(ellipse, rgb(243, 13, 13), rgb(174, 104, 255));
+    background-repeat: no-repeat;
+}
+
+.contenedor_grid{
+    color: rgb(252, 252, 252);
+    border: 0.2em solid rgb(209, 222, 33);
+    padding: 0.2em;
+    /*Convertir el contenedor en cuadricula*/
+    display: grid;
+    width: 30em;
+    height: 30em;
+    /*
+    Se declaran las columnas (tamaño) de la cuadricula
+    Aceptan valores fijos, relativos, porcentajes, auto y se pueden utilizar fr, para
+    definir una fraccion  del espacio disponible
+    */
+    grid-template-columns: 5em 5em 5em;
+    /*  Se declaran las filas o renglones de la cuadricula
+    Aceptan valores fijos, relativos, porcentajes, auto y se pueden utilizar fr, para
+    definir una fraccion  del espacio disponible*/
+    grid-template-rows: 10em 10em;
+    /*Alinear items en la fila (Eje en linea)(start, end, center, stretch)*/
+    justify-items: center;
+    /*Alinear items en la fila (Eje en linea)(start, end, center, stretch)*/
+    align-items: center;
+    /*Shorthand: place-items: stretch stetch*/
+    /*Alinar la cuadricula a lo largo del eje en línea(fila)
+    (start, end, center, stretch, space-between, space-araound, space-evenlyn)*/
+    justify-content: start;
+    /*Alinar la cuadricula a lo largo del eje en línea(fila)
+    (start, end, center, stretch, space-between, space-araound, space-evenlyn)*/
+    align-content: space-between;
+    gap: 1em;
+}
+
+.objeto_grid{
+    background-color: rgb(75, 125, 233);
+    border: 0.1em dashed rgb(13, 241, 119);   
+}
+
+.contenedor_grid2{
+    color: aliceblue;
+    border: 0.2em solid rgb(4, 225, 222);
+    padding: 0.2em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+}
+
+.objeto_grid2{
+    background-color: rgb(135, 228, 134);
+    border: 0.1em dashed white;   
+}
+
+.objeto_grid2:nth-child(1){
+    color:rgb(0, 0, 0);
+    grid-column: 1/2;
+}
+
+.objeto_grid2:nth-child(1){
+    color:rgb(224, 7, 7);
+    grid-column: 1/2;
+    grid-row: 1;
+}
