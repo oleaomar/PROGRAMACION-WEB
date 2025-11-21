@@ -1,0 +1,101 @@
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman';
+    background-color: #afa39ca9;
+}
+
+#encabezado{
+    background-color: rgba(191, 177, 99, 0.737);
+    color: rgb(57, 57, 57);
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 1em;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+#encabezado h1 {
+    margin: 5px;
+
+    font-size: 4em;
+
+}
+#encabezado h2{
+    margin:10px;
+    
+    font-weight: normal 12px;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+#encabezado img{
+ align-items: flex-start;
+}
+
+#encabezado nav ul{
+    display: flex;
+    gap:140px; /*Este es para la separacion de los enlacnes enter si*/
+    justify-content: center;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    color: rgb(144, 96, 45);
+}
+
+ul a:active{
+    /*Cuando se presiona el link sera d color cafesito*/
+    color: rgb(144, 96, 45);
+}
+
+
+img{
+    height: 10em;
+    width: 10em;
+    border-radius: 55%;
+    border: 3px solid rgb(197, 151, 34);
+    text-align: center;
+}
+
+.contenedor--flexible{
+    border: 0.2em solid rgb(201, 162, 162);
+    padding: 0.5em;
+    display: flex;
+    height: 30em;
+    width: 30em;
+    /*flex-direction (row, column, row-reverse, column-reverse)*/
+    flex-direction: row;
+    /*justify-content (flex-start, flex-end, centrer, space-between, space-around, space-evenly)-MAIN-AXIS(EJES-X)*/
+    justify-content: space-around;
+    /*align-items (flex-start, flex-end, center, strech, baseline) transveral*/
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 350px) {
+    #encabezado ul {
+       
+       flex-direction:column-reverse ;
+        font-size: 1em;
+    }
+
+    #encabezado h1 {
+        font-size: 2em;
+    }
+
+    #encabezado img {
+        width: 18%;
+        height: 18%;
+    }
+}
